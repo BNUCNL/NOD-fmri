@@ -5,8 +5,15 @@ from nibabel import Nifti1Header
 from nibabel import Nifti1Image
 import numpy as np
 import subprocess
-from surf_utils import save_ciftifile
 from tqdm import tqdm
+
+# save nifti
+def save_ciftifile(data, filename, template='./supportfiles/template.dtseries.nii'):
+    ex_cii = nib.load(template)
+    if data.ndim == 1:
+      data = data[None,:]
+    ex_cii.header.get_index_map(0).number_of_series_points = data.shape[0]
+    nib.save(nib.Cifti2Image(data,ex_cii.header), filename)
 
 # define paths
 dataset_path = 'PATHtoDataset'

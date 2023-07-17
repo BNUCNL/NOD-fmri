@@ -1,6 +1,6 @@
 # A large-scale fMRI dataset for human visual processing of naturalistic scenes
-Natural Object Dataset (NOD), a large-scale fMRI dataset containing responses to 57,620 naturalistic images from 30 participants. NOD strives for a balance between sampling variation between individuals and sampling variation between stimuli. The dataset contains raw data, derived data from fMRIPrep and Ciftify, and suface-based analyzed data.   
-To get more details, please refer to the paper at {website} and the dataset at https://openneuro.org/datasets/ds004496/versions/1.2.2
+Natural Object Dataset (NOD), a large-scale fMRI dataset containing responses to 57,120 naturalistic images from 30 participants. NOD strives for a balance between sampling variation between individuals and sampling variation between stimuli. The dataset contains raw data, derived data from fMRIPrep and Ciftify, and suface-based analyzed data.   
+To get more details, please refer to the paper at {website} and the dataset at https://openneuro.org/datasets/ds004496/versions/2.1.1
 
 ## Preprocess procedure
 The MRI data were preprocessed by fMRIprep 20.2.142. Detailed information on fMRIprep pipelines can be found in the online documentation of the fMRIPrep(https://fmriprep.org). Then, all the preprocessed individual fMRI data were registered onto the 32k fsLR space using the Ciftify toolbox.
@@ -64,6 +64,9 @@ We combined the data from ImageNet, COCO, and functional localizer experiments t
 
 **code: ./validation/DNN-based_prf-encoding-model.py**
 
+
+## Mannually prepared environment
+We provide the *requirements.txt* to install python packages used in these codes. However, some packages like *dnnbrain*, *fmriprep*, and *ciftify* require external dependecies. We have refered neccesary informations about how to install these dependencies in the *requirements.txt*.
 
 
 

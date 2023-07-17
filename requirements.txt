@@ -1,0 +1,16 @@
+# python packages used for analysis codes
+nibabel==3.2.1
+nilearn==0.7.0
+numpy==1.19.2
+pandas==1.1.3
+scikit_learn==1.0
+scipy==1.5.2
+tqdm==4.50.2
+
+# dnnbrain installation
+# please visit https://dnnbrain.readthedocs.io/en/latest/install.html#install-from-source
+
+# preprocessing packges
+# there are several external dependencies for fmriprep and ciftify to 
+fmriprep==20.2.1 # more details please visit https://fmriprep.org/en/20.2.1/installation.html 
+ciftify # more details please visit https://edickie.github.io/ciftify/#/01_installation
